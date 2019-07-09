@@ -58,27 +58,25 @@
         <scene sceneID="DsM-qv-O7j">
             <objects>
                 <viewController id="VXO-w9-HgE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="iXV-Fz-X7A">
+                    <view key="view" contentMode="scaleToFill" id="iXV-Fz-X7A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEl-IW-iaH">
-                                <rect key="frame" x="330" y="833" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.75800711378726349" green="0.29739334675372731" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptG-ub-X3B">
+                                <rect key="frame" x="349" y="833" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.16078431900000001" green="0.99215692280000001" blue="0.19215688110000001" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="N9f-WZ-v1a"/>
-                                    <constraint firstAttribute="height" constant="30" id="auW-7t-Rba"/>
+                                    <constraint firstAttribute="height" constant="30" id="Cqf-14-h6s"/>
+                                    <constraint firstAttribute="width" constant="46" id="dfW-NL-7fz"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LfI-LG-bzg">
-                                <rect key="frame" x="1" y="865" width="321" height="30"/>
-                                <color key="backgroundColor" red="0.17737156860273628" green="1" blue="0.20404481229622051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jS9-Ww-5Nw">
+                                <rect key="frame" x="21" y="833" width="321" height="30"/>
+                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="321" id="5iT-M0-8KH"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="GnY-pO-Lge"/>
-                                    <constraint firstAttribute="width" constant="321" id="NrA-Wr-gHD"/>
-                                    <constraint firstAttribute="height" constant="30" id="sO4-Le-lCO"/>
+                                    <constraint firstAttribute="height" constant="30" id="hre-1h-kii"/>
+                                    <constraint firstAttribute="width" constant="321" id="wO5-Uh-u28"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -87,12 +85,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="LfI-LG-bzg" secondAttribute="bottom" constant="1" id="Eyv-KI-fu3"/>
-                            <constraint firstItem="LEl-IW-iaH" firstAttribute="leading" secondItem="LfI-LG-bzg" secondAttribute="trailing" constant="8" id="GuT-Lw-Asx"/>
-                            <constraint firstItem="LEl-IW-iaH" firstAttribute="bottom" secondItem="iXV-Fz-X7A" secondAttribute="bottomMargin" constant="1" id="Gz5-zb-rFY"/>
-                            <constraint firstItem="LEl-IW-iaH" firstAttribute="trailing" secondItem="iXV-Fz-X7A" secondAttribute="trailingMargin" constant="1" id="Hvz-Nx-aFN"/>
-                            <constraint firstItem="LEl-IW-iaH" firstAttribute="leading" secondItem="LfI-LG-bzg" secondAttribute="trailing" constant="8" id="RpM-qv-CA1"/>
-                            <constraint firstItem="LfI-LG-bzg" firstAttribute="leading" secondItem="iXV-Fz-X7A" secondAttribute="leading" constant="1" id="v1F-on-NZb"/>
+                            <constraint firstItem="jS9-Ww-5Nw" firstAttribute="bottom" secondItem="iXV-Fz-X7A" secondAttribute="bottomMargin" constant="1" id="2cV-el-rk1"/>
+                            <constraint firstItem="ptG-ub-X3B" firstAttribute="bottom" secondItem="iXV-Fz-X7A" secondAttribute="bottomMargin" constant="1" id="LcG-uY-1GT"/>
+                            <constraint firstItem="ptG-ub-X3B" firstAttribute="trailing" secondItem="iXV-Fz-X7A" secondAttribute="trailingMargin" constant="1" id="fqN-RK-qWe"/>
+                            <constraint firstItem="jS9-Ww-5Nw" firstAttribute="leading" secondItem="iXV-Fz-X7A" secondAttribute="leadingMargin" constant="1" id="iOy-Vm-Pey"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j8Y-qP-tUq"/>
                     </view>
