@@ -57,30 +57,26 @@
         <!--View Controller-->
         <scene sceneID="DsM-qv-O7j">
             <objects>
-                <viewController id="VXO-w9-HgE" customClass="BViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VXO-w9-HgE" customClass="AViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iXV-Fz-X7A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptG-ub-X3B">
-                                <rect key="frame" x="349" y="833" width="46" height="30"/>
+                                <rect key="frame" x="348" y="831" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.16078431900000001" green="0.99215692280000001" blue="0.19215688110000001" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Cqf-14-h6s"/>
-                                    <constraint firstAttribute="width" constant="46" id="dfW-NL-7fz"/>
+                                    <constraint firstAttribute="height" constant="30" id="Wes-zw-59z"/>
+                                    <constraint firstAttribute="width" constant="46" id="bu7-Ek-cfP"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="btnBClicked:" destination="VXO-w9-HgE" eventType="touchUpInside" id="hOx-4W-WNo"/>
+                                    <action selector="btnAClicked:" destination="VXO-w9-HgE" eventType="touchUpInside" id="78G-VV-xb2"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jS9-Ww-5Nw">
-                                <rect key="frame" x="21" y="833" width="321" height="30"/>
+                                <rect key="frame" x="19" y="831" width="321" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hre-1h-kii"/>
-                                    <constraint firstAttribute="width" constant="321" id="wO5-Uh-u28"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -88,15 +84,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jS9-Ww-5Nw" firstAttribute="bottom" secondItem="iXV-Fz-X7A" secondAttribute="bottomMargin" constant="1" id="2cV-el-rk1"/>
-                            <constraint firstItem="ptG-ub-X3B" firstAttribute="bottom" secondItem="iXV-Fz-X7A" secondAttribute="bottomMargin" constant="1" id="LcG-uY-1GT"/>
-                            <constraint firstItem="ptG-ub-X3B" firstAttribute="trailing" secondItem="iXV-Fz-X7A" secondAttribute="trailingMargin" constant="1" id="fqN-RK-qWe"/>
-                            <constraint firstItem="jS9-Ww-5Nw" firstAttribute="leading" secondItem="iXV-Fz-X7A" secondAttribute="leadingMargin" constant="1" id="iOy-Vm-Pey"/>
+                            <constraint firstItem="jS9-Ww-5Nw" firstAttribute="leading" secondItem="j8Y-qP-tUq" secondAttribute="leading" constant="19" id="53I-Jw-0zv"/>
+                            <constraint firstItem="j8Y-qP-tUq" firstAttribute="bottom" secondItem="ptG-ub-X3B" secondAttribute="bottom" constant="1" id="VlG-8L-MhK"/>
+                            <constraint firstItem="ptG-ub-X3B" firstAttribute="leading" secondItem="jS9-Ww-5Nw" secondAttribute="trailing" constant="8" id="jYy-gF-a5f"/>
+                            <constraint firstItem="j8Y-qP-tUq" firstAttribute="trailing" secondItem="ptG-ub-X3B" secondAttribute="trailing" constant="20" id="spM-dD-9XD"/>
+                            <constraint firstItem="ptG-ub-X3B" firstAttribute="centerY" secondItem="jS9-Ww-5Nw" secondAttribute="centerY" id="u2d-c5-vEn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j8Y-qP-tUq"/>
                     </view>
                     <connections>
-                        <outlet property="lbMMsg" destination="jS9-Ww-5Nw" id="3R0-O1-sqI"/>
+                        <outlet property="btnHiBottonConstraint" destination="VlG-8L-MhK" id="zTJ-td-aWS"/>
+                        <outlet property="lbXLMsg" destination="jS9-Ww-5Nw" id="NFV-Gb-5su"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXx-xk-Qhb" userLabel="First Responder" sceneMemberID="firstResponder"/>

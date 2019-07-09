@@ -10,11 +10,18 @@ import UIKit
 
 class AViewController: UIViewController {
   @IBOutlet weak var lbXLMsg: UITextField!
-    
+
+
+
+    @IBOutlet weak var btnHiBottonConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification , object:nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillHideNotification , object:nil)
     }
     
     @IBAction func btnAClicked(_ sender: UIButton) {
@@ -22,7 +29,17 @@ class AViewController: UIViewController {
         print("我按了啥？")
         
         lbXLMsg.text = "我要吃铜锣烧"
-        lbXLMsg.textColor = UIColor.green
+        lbXLMsg.textColor = UIColor.red
+        
+        
+        
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        let keyboardHeight = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+        print("猜猜看： \(keyboardHeight)")
+        
+        btnHiBottonConstraint.constant = keyboardHeight
         
     }
 
@@ -35,5 +52,15 @@ class AViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+
+   
+    
+    
+//    @objc func keyboardWillHide(notification: NSNotification) {
+//        let keyboardHeight = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.height
+//        print(keyboardHeight)
+//    }
 
 }
