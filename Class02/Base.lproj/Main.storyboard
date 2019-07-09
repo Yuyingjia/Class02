@@ -57,7 +57,7 @@
         <!--View Controller-->
         <scene sceneID="DsM-qv-O7j">
             <objects>
-                <viewController id="VXO-w9-HgE" sceneMemberID="viewController">
+                <viewController id="VXO-w9-HgE" customClass="BViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iXV-Fz-X7A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,10 +70,13 @@
                                     <constraint firstAttribute="width" constant="46" id="dfW-NL-7fz"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnBClicked:" destination="VXO-w9-HgE" eventType="touchUpInside" id="hOx-4W-WNo"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jS9-Ww-5Nw">
                                 <rect key="frame" x="21" y="833" width="321" height="30"/>
-                                <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hre-1h-kii"/>
                                     <constraint firstAttribute="width" constant="321" id="wO5-Uh-u28"/>
@@ -92,6 +95,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j8Y-qP-tUq"/>
                     </view>
+                    <connections>
+                        <outlet property="lbMMsg" destination="jS9-Ww-5Nw" id="3R0-O1-sqI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXx-xk-Qhb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

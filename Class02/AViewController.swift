@@ -9,7 +9,7 @@
 import UIKit
 
 class AViewController: UIViewController {
-  @IBOutlet weak var lbMsg: UITextField!
+  @IBOutlet weak var lbXLMsg: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,12 +17,12 @@ class AViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnTestClicked(_ sender: UIButton) {
+    @IBAction func btnAClicked(_ sender: UIButton) {
         
         print("我按了啥？")
         
-        lbMsg.text = "我要吃铜锣烧"
-        lbMsg.textColor = UIColor.green
+        lbXLMsg.text = "我要吃铜锣烧"
+        lbXLMsg.textColor = UIColor.green
         
     }
 
