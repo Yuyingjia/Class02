@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="syP-4X-JAZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H8I-SB-UCP">
     <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -104,7 +103,7 @@
         <!--View Controller-->
         <scene sceneID="gDS-ob-maX">
             <objects>
-                <viewController id="syP-4X-JAZ" sceneMemberID="viewController">
+                <viewController id="syP-4X-JAZ" customClass="ViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ChX-zt-gNm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,12 +127,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HSp-O8-anT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49.275362318840585" y="24.776785714285712"/>
+            <point key="canvasLocation" x="-38" y="25"/>
         </scene>
-        <!--View Controller-->
+        <!--Loginin View Controller-->
         <scene sceneID="Obb-P2-D0h">
             <objects>
-                <viewController id="h29-n1-OR5" sceneMemberID="viewController">
+                <viewController id="h29-n1-OR5" customClass="LogininViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ak9-rw-Jp7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,10 +262,10 @@
             </objects>
             <point key="canvasLocation" x="2347.826086956522" y="24.776785714285712"/>
         </scene>
-        <!--View Controller-->
+        <!--My Web View Controller-->
         <scene sceneID="a7U-eX-mre">
             <objects>
-                <viewController id="4gm-9n-lwK" sceneMemberID="viewController">
+                <viewController id="4gm-9n-lwK" customClass="MyWebViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nDT-kq-aNf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -294,10 +293,10 @@
             </objects>
             <point key="canvasLocation" x="3350.7246376811595" y="367.63392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--My Map View Controller-->
         <scene sceneID="o5C-1m-Eio">
             <objects>
-                <viewController id="H8I-SB-UCP" sceneMemberID="viewController">
+                <viewController id="H8I-SB-UCP" customClass="MyMapViewController" customModule="Class02" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHT-cb-E0e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
